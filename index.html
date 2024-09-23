@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="/index.css" />
+	</head>
+	<body>
+		<button onclick="update()">Update</button>
+		<br />
+		<div class="box" id="content">Hello, Jordon!</div>
+	</body>
+	<script>
+		const content = document.getElementById("content");
+
+		function update() {
+			content.classList.toggle("big");
+		}
+	</script>
+</html>

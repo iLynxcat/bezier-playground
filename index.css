@@ -1,0 +1,29 @@
+body {
+	font-family: sans-serif;
+}
+
+.box {
+	--easing: cubic-bezier(0.66, 0.15, 0.22, 1.46);
+
+	padding: 8px 12px;
+	background: black;
+	color: #ffffff44;
+	font-size: 12px;
+	border-radius: 4px;
+	display: inline-block;
+	width: fit-content;
+	font-weight: bold;
+	transition: width 0.5s var(--easing), padding 0.5s var(--easing),
+		font-size 0.5s var(--easing), color 0.3s var(--easing),
+		transform 0.5s var(--easing);
+	width: 200px;
+	display: grid;
+	place-items: center;
+}
+
+.box.big {
+	width: 400px;
+	padding: 12px 18px;
+	color: white;
+	font-size: 1.5rem;
+}
